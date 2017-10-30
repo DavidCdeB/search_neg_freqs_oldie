@@ -2,7 +2,8 @@
 
 # Program to exctract zero or neg. freqs:
 
-python extracting_zero_or_negative_frequencies_part1.py > zero_or_negatives.txt
+#python extracting_zero_or_negative_frequencies_part1.py > zero_or_negatives.txt
+python extracting_zero_or_negative_frequencies_part1_crystal17.py > zero_or_negatives.txt
 
 ex zero_or_negatives.txt <<-EOF
   :g/\[\]/d    
