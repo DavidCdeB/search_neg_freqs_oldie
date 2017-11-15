@@ -11,8 +11,14 @@ ex neg_freqs_grabbing_more_decimals.txt <<-EOF
   :%s/\.\//\r\.\//g 
   :g/MODES         EIGV          FREQUENCIES     IRREP/d
   :g/HARTREE/d
+  :g/compilation/d
+  :g/crystal/d
   wq " Update changes and quit.
 EOF
+
+echo "You can now open the 'neg_freqs_grabbing_more_decimals.txt' file, with the summary for all the negative freqs"
+
+echo "Counting the number of negative freqs..."
 
 # In order, these commands are:
 
@@ -21,3 +27,5 @@ EOF
 # search for "./"
 # Add an empty line before "./"
 # Update changes and quit.
+
+python extract_neg_freqs_v3_counting.py
